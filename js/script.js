@@ -36,7 +36,7 @@ function calculadora(operacao) {
 
 function calcular_idade() {
     const idade = new Date(document.getElementById("idade").value);
-    const data = new Date("2030/12/31")
-    let resultado = data.getFullYear() - idade.getFullYear()
+    const data = 2030
+    let resultado = data - idade.getFullYear()
     document.getElementById("resultado_idade").innerHTML = 'Você irá completar ' + resultado + ' anos em 2030';
 }
